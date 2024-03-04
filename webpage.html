@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team page</title>
@@ -12,28 +15,33 @@
             <div id="iitrlogo">
                 <img src="assets/images/iitrlogo.svg" alt="iitr_logo" style="width: 431.25px;height: 60px;">
             </div>
+            <div class="righter-options">
             <div class="right-options">
-            <div class="upper-right-options">
-                <div><img src="assets/images/hindi.png" alt="hindi" style="height: auto; width: auto;">|ENG</div> 
-                <div class="text size">
-                    <div id="smalltext">A-</div>
-                    <div id="mediumtext">A</div>
-                    <div id="bigtext">A+</div>
+                <div class="upper-right-options">
+                    <div class="lang">
+                        <a>हिंदी</a>
+                        |
+                        <a>ENG</a>
+                    </div>
+                    <div class="text-size">
+                        <div id="smalltext">A-</div>
+                        <div id="mediumtext">A</div>
+                        <div id="bigtext">A+</div>
+                    </div>
+                    <div class="appearance">
+                        <div id="lighttheme">A</div>
+                        <div id="darktheme">A</div>
+                    </div>                      
                 </div>
-                <div class="appearance">
-                    <div id="lighttheme">A</div>
-                    <div id="darktheme">A</div>
-                </div>               
-                    <img class="searchbutton" src="assets/vectors/Vector.svg" alt="Search">       
+                <div class="lower-right-options">
+                    <div class="lower-header-text"><a href="#">CALENDAR</a></div>
+                    <div class="lower-header-text"><a href="#">CONTACT US</a></div>
+                    <div class="lower-header-text"><a href="#">DIRECTORY</a></div>
+                </div>
             </div>
-            <div class="lower-right-options">
-                <div class="lower-header-text"><a href="#">CALENDAR</a></div>
-                <div class="lower-header-text"><a href="#">CONTACT US</a></div>
-                <div class="lower-header-text"><a href="#">DIRECTORY</a></div>
-            </div>
+            <img class="searchbutton" src="assets/vectors/Vector.svg" alt="Search">
             </div>
         </div>
-        <hr> 
         <nav class="navbar">
             <div class="navitems">
                 <a href="#">
@@ -66,11 +74,9 @@
                 </a>
             </div>
             <div class="navitems">
-                <a href="#">
-                <div>    
+                <a href="#">  
                 <div class="navitems-text">CAREERS</div>
                 <img class="text-icon" src="assets/vectors/down.svg" alt="MORE">
-                </div>
                 </a>
             </div>
             <div class="navitems">
@@ -95,61 +101,67 @@
                 <div class="boxtext">TEAM</div>
             </div>
             <div class="head-text">MEET THE TEAM</div>
-            <div clas="desc-text">Get to know the developers and designers behind the website!</div>
+            <div class="desc-text">Get to know the developers and designers behind the website!</div>
         </div>
-        <div class="discription">Building technology infrastructure for the campus requires the collaborative efforts of a diverse team with complementary skills and expertise. The team plays a crucial role in ensuring the infrastructure's successful development, implementation, and maintenance, which is essential for supporting the campus community's needs and enhancing their overall experience.</div>
+        <div class="description">Building technology infrastructure for the campus requires the collaborative efforts of a diverse team with complementary skills and expertise. The team plays a crucial role in ensuring the infrastructure's successful development, implementation, and maintenance, which is essential for supporting the campus community's needs and enhancing their overall experience.</div>
         <div class="members">
             <div class="designers">
                 <div class="heading">DESIGNERS</div>
-                <div class="infocard">
-                    <img src="assets/images/rishirajbw.png" alt="Rishiraj Shrivastava" onmouseover="this.src='assets/images/rishiraj.png'" onmouseout="this.src='assets/images/rishirajbw.png'">
-                    <div class="info">
-                        <div class="nametext">RISHIRAJ SHRIVASTAVA</div>
-                        <div class="jobtext">Project Lead,III year</div>
-                        <hr>
-                        <div class="social">
-                            <div class="social1"><img src="assets/vectors/Group 2.svg" alt="Facebook"></div>
-                            <div class="social2"><img src="assets/vectors/Group 2.svg" alt="LinkedIn"></div>
-                            <div class="social3"><img src="assets/vectors/Group 2.svg" alt="Instagram"></div>
+                <div class="info-head">
+                    <div class="infocard">
+                        <div class="blue-back">
+                            <div class="backgrd"></div>
+                            <img src="assets/images/rishirajbw.png" alt="Rishiraj Shrivastava" onmouseover="this.src='assets/images/rishiraj.png'" onmouseout="this.src='assets/images/rishirajbw.png'">
+                        </div>
+                        <div class="info">
+                            <div class="nametext">RISHIRAJ SHRIVASTAVA</div>
+                            <div class="jobtext">Project Lead,III year</div>
+                            
+                            <div class="social">
+                                <div class="social1"><img src="assets/vectors/Group 2.svg" alt="Facebook"></div>
+                                <div class="social2"><img src="assets/vectors/Group 2.svg" alt="LinkedIn"></div>
+                                <div class="social3"><img src="assets/vectors/Group 2.svg" alt="Instagram"></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="infocard">
-                    <img src="assets/images/anshikabw.png" alt="Anshika Arora" onmouseover="this.src='assets/images/anshika.png'" onmouseout="this.src='assets/images/anshikabw.png'">
-                    <div class="info">
-                        <div class="nametext">ANSHIKA ARORA</div>
-                        <div class="jobtext">Project Lead,III year</div>
-                        <hr>
-                        <div class="social">
-                            <div class="social1"><img src="assets/vectors/Group 2.svg" alt="Facebook"></div>
-                            <div class="social2"><img src="assets/vectors/Group 2.svg" alt="LinkedIn"></div>
-                            <div class="social3"><img src="assets/vectors/Group 2.svg" alt="Instagram"></div>
+                    <div class="infocard">
+                        <div class="blue-back"><img src="assets/images/anshikabw.png" alt="Anshika Arora" onmouseover="this.src='assets/images/anshika.png'" onmouseout="this.src='assets/images/anshikabw.png'"></div>
+                        <div class="info">
+                            <div class="nametext">ANSHIKA ARORA</div>
+                            <div class="jobtext">Project Lead,III year</div>
+                            
+                            <div class="social">
+                                <div class="social1"><img src="assets/vectors/Group 2.svg" alt="Facebook"></div>
+                                <div class="social2"><img src="assets/vectors/Group 2.svg" alt="LinkedIn"></div>
+                                <div class="social3"><img src="assets/vectors/Group 2.svg" alt="Instagram"></div>
+                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="infocard">
-                    <img class="image-main" src="assets/images/gauribw.png" alt="Gauri Garg" onmouseover="this.src='assets/images/gauri.png'" onmouseout="this.src='assets/images/gauribw.png'">
-                    <div class="info">
-                        <div class="nametext">GAURI GARG</div>
-                        <div class="jobtext">Project Lead,III year</div>
-                        <hr>
-                        <div class="social">
-                            <div class="social1"><img src="assets/vectors/Group 2.svg" alt="Facebook"></div>
-                            <div class="social2"><img src="assets/vectors/Group 2.svg" alt="LinkedIn"></div>
-                            <div class="social3"><img src="assets/vectors/Group 2.svg" alt="Instagram"></div>
+                     </div>
+                    <div class="infocard">
+                        <div class="blue-back"><img class="image-main" src="assets/images/gauribw.png" alt="Gauri Garg" onmouseover="this.src='assets/images/gauri.png'" onmouseout="this.src='assets/images/gauribw.png'"></div>
+                        <div class="info">
+                            <div class="nametext">GAURI GARG</div>
+                            <div class="jobtext">Project Lead,III year</div>
+                           
+                            <div class="social">
+                                <div class="social1"><img src="assets/vectors/Group 2.svg" alt="Facebook"></div>
+                                <div class="social2"><img src="assets/vectors/Group 2.svg" alt="LinkedIn"></div>
+                                <div class="social3"><img src="assets/vectors/Group 2.svg" alt="Instagram"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="developers">
                 <div class="heading">DEVELOPERS</div>
+                <div class="info-head">
                 <div class="infocard">
                     <img class="image-main"  src="assets/images/akhilbw.png" alt="Akhil Punia" onmouseover="this.src='assets/images/akhil.png'" onmouseout="this.src='assets/images/akhilbw.png'">
 
                     <div class="info">
                         <div class="nametext">AKHIL PUNIA</div>
                         <div class="jobtext">Project Lead,III year</div>
-                        <hr>
+                    
                         <div class="social">
                             <div class="social1"><img src="assets/vectors/Group 2.svg" alt="Facebook"></div>
                             <div class="social2"><img src="assets/vectors/Group 2.svg" alt="LinkedIn"></div>
@@ -164,7 +176,6 @@
                     <div class="info">
                         <div class="nametext">SAMRAT MIDDHA</div>
                         <div class="jobtext">Project Lead,III year</div>
-                        <hr>
                         <div class="social">
                             <div class="social1"><img src="assets/vectors/Group 2.svg" alt="Facebook"></div>
                             <div class="social2"><img src="assets/vectors/Group 2.svg" alt="LinkedIn"></div>
@@ -179,7 +190,6 @@
                     <div class="info">
                         <div class="nametext">NOBLE MITTAL</div>
                         <div class="jobtext">Project Lead,III year</div>
-                        <hr>
                         <div class="social">
                             <div class="social1"><img src="assets/vectors/Group 2.svg" alt="Facebook"></div>
                             <div class="social2"><img src="assets/vectors/Group 2.svg" alt="LinkedIn"></div>
@@ -193,7 +203,6 @@
                     <div class="info">
                         <div class="nametext">AKHIL PUNIA</div>
                         <div class="jobtext">Project Lead,III year</div>
-                        <hr>
                         <div class="social">
                             <div class="social1"><img src="assets/vectors/Group 2.svg" alt="Facebook"></div>
                             <div class="social2"><img src="assets/vectors/Group 2.svg" alt="LinkedIn"></div>
@@ -208,7 +217,6 @@
                     <div class="info">
                         <div class="nametext">SAMRAT MIDDHA</div>
                         <div class="jobtext">Project Lead,III year</div>
-                        <hr>
                         <div class="social">
                             <div class="social1"><img src="assets/vectors/Group 2.svg" alt="Facebook"></div>
                             <div class="social2"><img src="assets/vectors/Group 2.svg" alt="LinkedIn"></div>
@@ -223,7 +231,6 @@
                     <div class="info">
                         <div class="nametext">NOBLE MITTAL</div>
                         <div class="jobtext">Project Lead,III year</div>
-                        <hr>
                         <div class="social">
                             <div class="social1"><img src="assets/vectors/Group 2.svg" alt="Facebook"></div>
                             <div class="social1"><img src="assets/vectors/Group 2.svg" alt="LinkedIn"></div>
@@ -232,15 +239,19 @@
                     </div>
                 </div>
             </div>
+            </div>
         </div>
+    </main>
         <footer>
             <div class="footer-main">
                 <div class="departments">
                     <div class="footer-main-heading">
                         Department of Chemical Engineering
+                    </div>
+                    <div class="footer-main-heading">
                         IIT Roorkee
                     </div>
-                    <img src="assets/images/google-maps.svg" alt="location">
+                    <img id="maps" src="assets/images/google-maps.svg" alt="location">
                     <div class="contact-text">Contact us-</div>
                     <div class="contact-class">
                         <img class="icons" src="assets/vectors/phone.svg" alt="Phone">
@@ -288,7 +299,7 @@
                     <div class="contact-text">Photo Credits: Photography Club, IITR</div>
                     <div class="contact-class">
                         <div class="contact-text">Made with</div>
-                        <img src="assets/vectors/love.svg" alt="love">
+                        <img class='icons' src="assets/vectors/love.svg" alt="love">
                         <div class="contact-text">by:</div>
                     </div>
                     <div class="contact-text">Information Management Group, IITR</div>
@@ -296,7 +307,7 @@
             </div>
             <div class="footer-bottom-bar">
                 <div class="accessibility-bar"> 
-                    <div class="accessibility-bar-left>
+                    <div class="accessibility-bar-left">
                         <div class="accessibility-bar-text">Site Map</div>
                         <div class="accessibility-bar-text">Privacy Policy</div>
                         <div class="accessibility-bar-text">Accessibility</div>
@@ -310,6 +321,5 @@
                 </div>
             </div>
         </footer>
-    </main>
 </body>
 </html>
