@@ -1,3 +1,9 @@
+html{
+    font-family: Lato;
+    font-size: 100%;
+    padding-right: 12.5vw;
+}
+
 .header{
     display: flex;
     flex-direction: column;
@@ -9,7 +15,7 @@
         margin-top: 1%;
         padding-bottom: 1rem;
         border-bottom: 1.3px solid rgba(128, 179, 217, 1);
-        padding-inline: 2rem;
+        margin-left: 12.5vw;
     }  
 }
 
@@ -29,7 +35,6 @@
     flex-direction:row;
     justify-content: space-evenly;
     align-items: center;
-    font-family: Lato;
     font-size: 1em;
     .lang{
         display: flex;
@@ -91,7 +96,6 @@
         color: black;
     }
     .lower-header-text{
-        font-family: Lato;
         font-size: 0.9em;
         padding: 0.7rem;
     }
@@ -103,13 +107,14 @@
     align-items: center;
     padding-top: 1.6rem;
     padding-bottom: 1rem;
+    margin-left: 12.5vw;
     .navitems > a{
         display: flex;
         flex-direction: row;
         text-decoration: none;
     }
     .navitems > a > .navitems-text{
-        font-family: Lato;
+
         font-size: 1.2em;
         font-weight: 400;
         color: rgba(35, 35, 35, 1);
@@ -120,66 +125,63 @@ main > .blue-box{
     width: 100vw;
     background-image: linear-gradient(rgba(81, 131, 184, 1),rgba(0, 103, 179, 0.8));
     background-color: linear-gradient(rgba(81, 131, 184, 1),rgba(0, 103, 179, 0.8));
+    padding-left: 12.5vw;
     .upper-box{
         display: flex;
         color: white;
         justify-content: flex-start;
         align-items: center;
-        padding-top: 3rem;
-        padding-left: 2rem;
-        font-size: 1.2em;
-        font-family: Lato;
+        padding-top: 2rem;
+        font-size: 1em;
+        line-height: 1.05em;
         font-weight: 400;
-        margin-bottom: 8rem;
+        margin-bottom: 6.625rem;
+        .boxtext2{
+            font-weight: 300;
+            letter-spacing: 2%;
+        }
         .img{
             align-items: center;
         }
     }
     .head-text{
-        font-family: Lato;
         color: white;
-        font-size: 1.5em;
-        padding-left: 2rem;
-        margin-bottom: 2rem;
+        font-size: 1.75em;
     }
     .desc-text{
-        font-family: Lato;
+        font-family: Noto Sans;
         color: white;
-        font-size: 1.2em;
-        padding-bottom: 3rem ;
-        padding-left: 2rem;
+        font-size: 1em;
+        padding-block: 3rem ;
     }
 }
 main > .description{
-    font-family: Lato;
+    font-family: Noto Sans;
     color: black;
-    font-size: 1.2em;
-    letter-spacing: 0.03em;
-    word-spacing: 0.06em;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    padding-left: 2rem;
+    font-size: 1em;
+    line-height: 1.5em;
+    padding-block: 3rem;
+    padding-left: 12.5vw;
 }
 main > .members{
+    padding-left: 12.5vw;
     .heading{
-        font-family: Lato;
         font-size: 1.5em;
         color:rgba(76, 76, 76, 1);
-        padding-left: 2rem;
     }
     .info-head{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        align-items: baseline;
-        font-family: Lato;
         .infocard{
             display: flex;
             flex-direction: column;
-            .backgrd{
-                background-image: linear-gradient(rgba(81, 131, 184, 1),rgba(0, 103, 179, 0.8));
-                width: 32vw;
+            .image-main{
+                filter: grayscale(100%);
+            }
+            .image-main:hover{
+                filter: grayscale(0%);
             }
             .info{
                 display: flex;
@@ -206,8 +208,11 @@ footer > .footer-main{
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-block: 2rem;
+    padding-block: 4rem;
     margin-block: 2rem;
+    padding-left: 12.5vw;
+    font-family: Noto Sans;
+    color: rgba(35, 35, 35, 1);
     .contact-class{
         display: flex;
         flex-direction: row;
@@ -216,20 +221,23 @@ footer > .footer-main{
         }
     }
     .footer-main-heading{
-        font-family: Lato;
-        font-size: 1.1em;
+        font-size: 1em;
+        line-height: 1.5em;
+        font-family: Roboto;
+        color: black;
     }
     .contact-text{
-        font-family: Lato;
-        font-size: 1em;
+        font-size: 0.875em;
+    }
+    .contact-text-i{
+        font-size: 0.875em;
         align-self: center;
     }
     .departments{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: flex-start;
-        padding-left: 2rem;
         .contact-text{
             align-self: flex-start;
         }
@@ -238,11 +246,14 @@ footer > .footer-main{
             height: 10rem;
 
         }
+        .social{
+            padding-top: 1rem;
+        }
     }
     .explore{
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: flex-start;
         font-size: 1em;
         a{
@@ -253,7 +264,7 @@ footer > .footer-main{
     .quick-actions{
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: flex-start;
         font-size: 1em;
         a{
@@ -264,12 +275,13 @@ footer > .footer-main{
     .credits{
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: flex-start;
-        #footer-rect{
+        #rect{
             background-image: grey;
-            height: 4rem;
-            width: 6rem;
+            width: 17rem;
+            height: 10rem;
+            padding-bottom: 1.5rem;
         }
     }
 }
@@ -277,25 +289,28 @@ footer > .footer-main{
 footer > .footer-bottom-bar{
     display: flex;
     flex-direction: column;
-    font-size: 0.9em;
-    font-family: Lato;
+    font-size: 0.875em;
+    font-family: Noto Sans;
     .accessibility-bar{
-        padding-inline: 2rem;
         padding-block: 0.4rem;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
         color: black;
         background-color: rgba(231, 231, 231, 1);
+        padding-left: 12.5vw;
+        width: 100vw;
         .accessibility-bar-left{
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
             align-items: center;
+            .accessibility-bar-text{
+                padding-right: 1.5rem;
+            }
         }
-        .accessibility-bar-text{
-            padding-inline: 1rem;
+        .accessibility-bar-right{
+            padding-left: 35rem;
         }
     }
     .copyright-bar{
@@ -303,8 +318,10 @@ footer > .footer-bottom-bar{
         flex-direction: row;
         background-color: black;
         color: white;
-        padding-inline: 2rem;
+        padding-left: 12.5vw;
         padding-block: 0.5rem;
+        justify-content: space-between;
+        width: 100vw;
     }
 }
 .social{
