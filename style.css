@@ -35,7 +35,8 @@ a {
 }
 label{
     font-size: 3em;
-    align-self: center;
+    position: relative;
+    bottom: 0.5rem;
     display: none;
     padding: 1rem;
     margin: 1rem;
@@ -358,8 +359,8 @@ main > .members{
             padding-block: 1.25rem;
         
             display: flex;
-            flex-direction: row;
-            justify-content: space-around;
+            flex-direction: column;
+            justify-content: space-evenly;
             flex-wrap: wrap;
             align-items: center;
             font-size: 1em;
@@ -372,7 +373,7 @@ main > .members{
         .quick-actions{
             padding-block: 1.25rem;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             flex-wrap: wrap;
             justify-content: space-around;
             align-items:center;
