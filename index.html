@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
     <header class="header">
         <div class="upper-header">
             <div id="iitrlogo">
-                <img src="assets/images/iitrlogo.svg" alt="iitr_logo" style="width: 431.25px;height: 60px;">
+                <img src="assets/images/iitrlogo.png" alt="iitr_logo">
             </div>
             <div class="righter-options">
             <div class="right-options">
@@ -47,6 +47,25 @@
             </div>
             <img class="searchbutton" src="assets/vectors/Vector.svg" alt="Search">
             </div>
+            <label for="toggle">&#9776</label>
+            <input type="checkbox" id="toggle">
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+    // Get the toggle button and navbar
+    const toggleButton = document.getElementById('toggle');
+    const navbar = document.querySelector('.navbar');
+    function handleToggleChange() {
+        if (toggleButton.checked || window.innerWidth > 932) {
+            navbar.style.display = 'flex'; 
+        } else {
+            navbar.style.display = 'none'; 
+        }
+    }
+    toggleButton.addEventListener('change', handleToggleChange);
+    window.addEventListener('resize', handleToggleChange);
+    handleToggleChange();
+});
+            </script>
         </div>
         <nav class="navbar">
             <div class="navitems">
@@ -115,13 +134,11 @@
                 <div class="heading">DESIGNERS</div>
                 <div class="info-head">
                     <div class="infocard">
-                        <div class="blue-back">
-                            <img class="image-main" src="assets/images/rishiraj.png" alt="Rishiraj Shrivastava">
-                        </div>
+                        <img class="image-main" src="assets/images/rishiraj.png" alt="Rishiraj Shrivastava">
+                        <div class="blue-back"></div>
                         <div class="info">
                             <div class="nametext">RISHIRAJ SHRIVASTAVA</div>
-                            <div class="jobtext">Project Lead,III year</div>
-                            
+                            <div class="jobtext">Project Lead,III year</div> 
                             <div class="social">
                                 <div class="social1"><img src="assets/vectors/Group 2.svg" alt="Facebook"></div>
                                 <div class="social2"><img src="assets/vectors/Group 2.svg" alt="LinkedIn"></div>
@@ -130,7 +147,8 @@
                         </div>
                     </div>
                     <div class="infocard">
-                        <div class="blue-back"><img class="image-main" src="assets/images/anshika.png" alt="Anshika Arora"></div>
+                        <img class="image-main" src="assets/images/anshika.png" alt="Anshika Arora">
+                        <div class="blue-back"></div>
                         <div class="info">
                             <div class="nametext">ANSHIKA ARORA</div>
                             <div class="jobtext">Project Lead,III year</div>
@@ -143,7 +161,8 @@
                         </div>
                      </div>
                     <div class="infocard">
-                        <div class="blue-back"><img class="image-main" src="assets/images/gauri.png" alt="Gauri Garg" ></div>
+                        <img class="image-main" src="assets/images/gauri.png" alt="Gauri Garg" >
+                        <div class="blue-back"></div>
                         <div class="info">
                             <div class="nametext">GAURI GARG</div>
                             <div class="jobtext">Project Lead,III year</div>
@@ -162,7 +181,7 @@
                 <div class="info-head">
                 <div class="infocard">
                     <img class="image-main"  src="assets/images/akhil.png" alt="Akhil Punia">
-
+                    <div class="blue-back"></div>
                     <div class="info">
                         <div class="nametext">AKHIL PUNIA</div>
                         <div class="jobtext">Project Lead,III year</div>
@@ -175,9 +194,8 @@
                     </div>
                 </div>
                 <div class="infocard">
-
                     <img class="image-main" src="assets/images/samrat.png" alt="Samrat Middha">
-
+                    <div class="blue-back"></div>
                     <div class="info">
                         <div class="nametext">SAMRAT MIDDHA</div>
                         <div class="jobtext">Project Lead,III year</div>
@@ -189,9 +207,8 @@
                     </div>
                 </div>
                 <div class="infocard">
-
                     <img class="image-main" src="assets/images/noble.png" alt="Noble Mittal">
-
+                    <div class="blue-back"></div>
                     <div class="info">
                         <div class="nametext">NOBLE MITTAL</div>
                         <div class="jobtext">Project Lead,III year</div>
@@ -204,7 +221,7 @@
                 </div>
                 <div class="infocard">
                     <img class="image-main"  src="assets/images/akhil.png" alt="Akhil Punia">
-
+                    <div class="blue-back"></div>
                     <div class="info">
                         <div class="nametext">AKHIL PUNIA</div>
                         <div class="jobtext">Project Lead,III year</div>
@@ -216,9 +233,8 @@
                     </div>
                 </div>
                 <div class="infocard">
-
                     <img class="image-main" src="assets/images/samrat.png" alt="Samrat Middha">
-
+                    <div class="blue-back"></div>
                     <div class="info">
                         <div class="nametext">SAMRAT MIDDHA</div>
                         <div class="jobtext">Project Lead,III year</div>
@@ -230,9 +246,8 @@
                     </div>
                 </div>
                 <div class="infocard">
-
                     <img class="image-main" src="assets/images/noble.png" alt="Noble Mittal">
-
+                    <div class="blue-back"></div>
                     <div class="info">
                         <div class="nametext">NOBLE MITTAL</div>
                         <div class="jobtext">Project Lead,III year</div>
@@ -283,6 +298,7 @@
                     <a class="contact-text" href="#">Departments</a>
                     <a class="contact-text" href="#">Departments</a>
                     <a class="contact-text" href="#">Departments</a>
+              
                 </div>
                 <div class="quick-actions">
                     <div class="footer-main-heading">Quick Actions</div>
@@ -293,6 +309,7 @@
                     <a class="contact-text" href="#">Book guest House</a>
                     <a class="contact-text" href="#">Support @IITR</a>
                     <a class="contact-text" href="#">Give Feedback</a>
+
                 </div>
                 <div class="credits">
                     <img id="rect" src="assets/images/rectangle.png" alt="rectangle">
