@@ -34,12 +34,13 @@ a {
     }  
 }
 label{
-    font-size: 3em;
+    font-size: 1.8em;
     position: relative;
-    bottom: 0.5rem;
+    bottom: 0.4rem;
     display: none;
     padding: 1rem;
     margin: 1rem;
+    
 }
 #toggle{
     display: none;
@@ -81,12 +82,12 @@ label{
  
 } 
 
-@media only screen and (max-width:955px){
+@media only screen and (max-width:975px){
     .righter-options{
         display: none;
     }
 }
-@media only screen and (min-width:955px){
+@media only screen and (min-width:975px){
     .righter-options{
         display: flex;
         flex-direction: row;

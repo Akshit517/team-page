@@ -51,20 +51,19 @@
             <input type="checkbox" id="toggle">
             <script>
                 document.addEventListener('DOMContentLoaded', function() {
-    // Get the toggle button and navbar
-    const toggleButton = document.getElementById('toggle');
-    const navbar = document.querySelector('.navbar');
-    function handleToggleChange() {
-        if (toggleButton.checked || window.innerWidth > 932) {
-            navbar.style.display = 'flex'; 
-        } else {
-            navbar.style.display = 'none'; 
-        }
-    }
-    toggleButton.addEventListener('change', handleToggleChange);
-    window.addEventListener('resize', handleToggleChange);
-    handleToggleChange();
-});
+                const toggleButton = document.getElementById('toggle');
+                const navbar = document.querySelector('.navbar');
+                function handleToggleChange() {
+                    if (toggleButton.checked || window.innerWidth > 932) {
+                        navbar.style.display = 'flex'; 
+                    } else {
+                        navbar.style.display = 'none'; 
+                    }
+                }
+                toggleButton.addEventListener('change', handleToggleChange);
+                window.addEventListener('resize', handleToggleChange);
+                handleToggleChange();
+            });
             </script>
         </div>
         <nav class="navbar">
